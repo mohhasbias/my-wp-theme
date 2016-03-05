@@ -47,10 +47,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-                                if(!cat_is_ancestor_of($parent_cat->term_id, $cat[0]->cat_ID))
-			        {
-				     get_template_part( 'content', get_post_format() );
-                                }
+                get_template_part( 'content', get_post_format() );
 
 			// End the loop.
 			endwhile;
