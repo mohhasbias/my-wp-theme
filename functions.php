@@ -14,4 +14,12 @@ if(! function_exists('is_mata_kuliah')){
 	}
 }
 
+add_filter('get_the_archive_title', function($title){
+	if(is_mata_kuliah()){
+		$title = 'Mata Kuliah: ' . single_cat_title('', false);
+	}
+
+	return $title;
+});
+
 ?>
