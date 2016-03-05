@@ -5,4 +5,14 @@ function theme_enqueue_styles(){
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 }
 
+if(! function_exists('is_mata_kuliah')){
+	function is_mata_kuliah(){
+		$parent_cat = get_term_by('name', 'Mata Kuliah', 'category');
+		$cat = get_the_category();
+		echo "<h1>" . $cat . "</h1>";
+
+		return cat_is_ancestor_of($parent_cat->term_id, $cat[0]->cat_ID);
+	}
+}
+
 ?>

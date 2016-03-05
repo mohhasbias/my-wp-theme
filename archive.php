@@ -31,11 +31,12 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
-			$parent_cat = get_term_by('name', 'Mata Kuliah', 'category');
-			$cat = get_the_category();
+			//$parent_cat = get_term_by('name', 'Mata Kuliah', 'category');
+			//$cat = get_the_category();
 			//print_r($parent_cat);
 			//print_r($cat);
-			if(cat_is_ancestor_of($parent_cat->term_id, $cat[0]->cat_ID))
+			//if(cat_is_ancestor_of($parent_cat->term_id, $cat[0]->cat_ID))
+			if(is_mata_kuliah())
 			{
 				query_posts($query_string . '&posts_per_page=-1&orderby=title&order=ASC');
 			}
