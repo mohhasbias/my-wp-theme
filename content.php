@@ -26,7 +26,7 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<?php if(!is_mata_kuliah()): ?>
+	<?php //if(!is_mata_kuliah()): ?>
 		<div class="entry-content">
 			<?php
 				/* translators: %s: Name of current post */
@@ -47,7 +47,7 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
-	<?php endif; ?>
+	<?php //endif; ?>
 
 	<?php
 		// Author bio.
