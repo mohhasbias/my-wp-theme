@@ -47,7 +47,7 @@
 				) );
 			?>
 		</div><!-- .entry-content -->
-	<?php //endif; ?>
+	<?php endif; ?>
 
 	<?php
 		// Author bio.
