@@ -26,7 +26,7 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<?php //if(!is_mata_kuliah()): ?>
+	<?php if(is_single()): ?>
 		<div class="entry-content">
 			<?php
 				/* translators: %s: Name of current post */
